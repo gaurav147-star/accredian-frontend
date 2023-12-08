@@ -17,6 +17,8 @@ const Home = () => {
   const handleLogout = () => {
     // Perform logout actions here, e.g., clearing local storage, etc.
     // Then redirect to the login page
+    localStorage.removeItem("acctoken");
+
     navigate("/login");
   };
 
